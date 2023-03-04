@@ -1,1 +1,3 @@
-console.log("Hello World");
+import initialLoad from './modules/functions/init-page-load';
+
+initialLoad();
