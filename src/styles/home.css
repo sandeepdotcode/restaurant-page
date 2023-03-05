@@ -1,0 +1,8 @@
+#main-home {
+    background: url(../assets/images/home-bg.jpg) no-repeat;
+    background-size: auto 1800px;
+}
+
+.mission-text {
+    color: var(--mission-color);
+}

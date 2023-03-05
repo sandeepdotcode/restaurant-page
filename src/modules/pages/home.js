@@ -1,3 +1,7 @@
+import cocktailImage from '../../assets/images/home-cocktails.jpg';
+import homeBackground from '../../assets/images/home-bg.jpg';
+import '../../styles/home.css';
+
 function addTextAnimation(node, text) {
   let delayCount = 0;
 
@@ -15,6 +19,7 @@ function addTextAnimation(node, text) {
 
 function home() {
   const main = document.createElement('main');
+  main.id = 'main-home';
 
   const heroDiv = document.createElement('div');
   heroDiv.id = 'hero-div';
@@ -44,7 +49,7 @@ function home() {
   missionPara2.className = 'mission-text';
   missionPara3.className = 'mission-text';
   missionImage.id = 'mission-drinks--img';
-  missionImage.src = './assets/images/home-cocktails.jpg';
+  missionImage.src = cocktailImage;
   missionImage.alt = 'Image of Cocktails';
 
   missionPara1.textContent = `Worldwide Kitchen is a globally influenced fine-dining restaurant nestled in the heart of England in Buckingham Palace.
