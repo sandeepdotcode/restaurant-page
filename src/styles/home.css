@@ -3,6 +3,11 @@
     background-size: auto 1800px;
 }
 
+#hero-div {
+    padding-top: 10rem;
+    padding-left: 30%;
+}
+
 .mission-text {
     color: var(--mission-color);
 }

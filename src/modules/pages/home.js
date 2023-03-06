@@ -1,5 +1,5 @@
 import cocktailImage from '../../assets/images/home-cocktails.jpg';
-import homeBackground from '../../assets/images/home-bg.jpg';
+// import homeBackground from '../../assets/images/home-bg.jpg';
 import '../../styles/home.css';
 
 function addTextAnimation(node, text) {
@@ -30,7 +30,7 @@ function home() {
 
   const heroSub = document.createElement('p');
   heroSub.id = 'hero-subtext';
-  addTextAnimation(heroSub, 'CURATED BY EXPERTS');
+  addTextAnimation(heroSub, 'CURATED BY WORLDWIDE EXPERT CHEFS');
 
   heroDiv.appendChild(heroSub);
   heroDiv.appendChild(heroHead);

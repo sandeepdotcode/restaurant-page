@@ -21,7 +21,8 @@
 }
 
 :root {
-    --heading-color: #EBDFD4;
+    --font-color: #EBDFD4;
+    --header-bg: #031018;
     --mission-bg: #1c1c1c;
     --mission-color: #E4D1BF;
 }
@@ -39,12 +40,14 @@ html {
   font-family: 'Libre Caslon Text', serif;
 }
 
+body {
+  color: var(--font-color);
+}
+
 h1, h2, h3 {
     font-family: 'Libre Caslon Display', serif;
-    color: var(--heading-color);
 }
 
 h1 {
-  width: 80%;
   font-size: 8rem;
 }
