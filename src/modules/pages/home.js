@@ -40,6 +40,7 @@ function home() {
   missionDiv.id = 'our-mission';
   const missionTitle = document.createElement('h3');
   missionTitle.id = 'mission-title';
+  addTextAnimation(missionTitle, 'Our Mission');
 
   const missionPara1 = document.createElement('p');
   const missionPara2 = document.createElement('p');

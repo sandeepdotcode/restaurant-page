@@ -1,13 +1,26 @@
-#main-home {
+#hero-div {
+    height: 150vh;
     background: url(../assets/images/home-bg.jpg) no-repeat;
     background-size: auto 1800px;
-}
-
-#hero-div {
     padding-top: 10rem;
     padding-left: 30%;
 }
 
+#our-mission {
+    background-color: var(--mission-bg);
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    width: 80%;
+    height: 85vh;
+}
+
 .mission-text {
     color: var(--mission-color);
+    width: 35%;
+}
+
+#mission-drinks--img {
+    position: absolute;
+    top: 60vh;
 }
