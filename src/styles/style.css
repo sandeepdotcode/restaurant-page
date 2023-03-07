@@ -49,13 +49,30 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 9rem;
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 7.5rem;
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+}
+
+/* Rotating Image Animation */
+
+.picture-spin {
+  transform-origin: 50% 50%;
+  animation: rotateImg;
+  animation-duration: 90s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+
+@keyframes rotateImg {
+  100% {
+    transform: rotate(360deg);
+  }
 }

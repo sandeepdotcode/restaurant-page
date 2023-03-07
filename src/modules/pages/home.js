@@ -1,4 +1,8 @@
 import cocktailImage from '../../assets/images/home-cocktails.jpg';
+import fishHome1 from '../../assets/images/home-fish-1.png';
+import pizzaHome from '../../assets/images/home-pizza.png';
+import noodleHome from '../../assets/images/home-noodle.png';
+import fishHome2 from '../../assets/images/home-fish-2.png';
 // import homeBackground from '../../assets/images/home-bg.jpg';
 import '../../styles/home.css';
 
@@ -74,13 +78,21 @@ function home() {
   addTextAnimation(picturesHead, 'Beautiful and Flavorful Food');
 
   const picturesArray = [];
-  for (let i = 1; i <= 3; i += 1) {
+  for (let i = 1; i <= 4; i += 1) {
     const picture = document.createElement('img');
     picture.id = `home-picture-${i}`;
+    picture.className = 'picture-spin';
     picturesArray.push(picture);
   }
 
-  picturesDiv.append(picturesHead, picturesArray[0], picturesArray[1], picturesArray[2]);
+  picturesArray[0].src = fishHome1;
+  picturesArray[1].src = noodleHome;
+  picturesArray[2].src = fishHome2;
+  picturesArray[3].src = pizzaHome;
+
+  picturesDiv.appendChild(picturesHead);
+  picturesDiv.append(picturesArray[0], picturesArray[1], picturesArray[2], picturesArray[3]);
+  main.appendChild(picturesDiv);
 
   return main;
 }
