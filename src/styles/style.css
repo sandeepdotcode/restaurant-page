@@ -42,6 +42,7 @@ html {
 
 body {
   color: var(--font-color);
+  position: relative;
 }
 
 h1, h2, h3 {
@@ -68,11 +69,11 @@ h3 {
   animation-duration: 90s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  overflow: hidden;
 }
 
 @keyframes rotateImg {
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }

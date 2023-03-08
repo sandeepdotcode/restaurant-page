@@ -31,3 +31,9 @@ nav {
     color: #000;
     cursor: pointer;
 }
+
+footer {
+    height: 50vh;
+    background-color: var(--mission-bg);
+    width: 100%;
+}
