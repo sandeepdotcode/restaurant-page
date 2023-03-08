@@ -23,7 +23,7 @@ function addTextAnimation(node, text) {
 
 function home() {
   const main = document.createElement('main');
-  main.id = 'main-home';
+  main.id = 'main';
 
   const heroDiv = document.createElement('div');
   heroDiv.id = 'hero-div';
