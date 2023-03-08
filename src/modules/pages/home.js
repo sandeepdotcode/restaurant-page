@@ -24,16 +24,17 @@ function addTextAnimation(node, text) {
 function home() {
   const main = document.createElement('main');
   main.id = 'main';
+  main.className = 'main-home';
 
   const heroDiv = document.createElement('div');
-  heroDiv.id = 'hero-div';
+  heroDiv.className = 'hero-div';
 
   const heroHead = document.createElement('h1');
-  heroHead.id = 'hero-text';
+  heroHead.className = 'hero-text';
   addTextAnimation(heroHead, 'Assorted International Cuisine');
 
   const heroSub = document.createElement('p');
-  heroSub.id = 'hero-subtext';
+  heroSub.className = 'hero-subtext';
   addTextAnimation(heroSub, 'CURATED BY WORLDWIDE EXPERT CHEFS');
 
   heroDiv.appendChild(heroSub);
@@ -41,9 +42,9 @@ function home() {
   main.appendChild(heroDiv);
 
   const missionDiv = document.createElement('div');
-  missionDiv.id = 'our-mission';
+  missionDiv.className = 'our-mission';
   const missionTitle = document.createElement('h3');
-  missionTitle.id = 'mission-title';
+  missionTitle.className = 'mission-title';
   addTextAnimation(missionTitle, 'Our Mission');
 
   const missionPara1 = document.createElement('p');
@@ -53,7 +54,7 @@ function home() {
   missionPara1.className = 'mission-text';
   missionPara2.className = 'mission-text';
   missionPara3.className = 'mission-text';
-  missionImage.id = 'mission-drinks--img';
+  missionImage.className = 'mission-drinks--img';
   missionImage.src = cocktailImage;
   missionImage.alt = 'Image of Cocktails';
 
@@ -71,17 +72,16 @@ function home() {
   main.appendChild(missionDiv);
 
   const picturesDiv = document.createElement('div');
-  picturesDiv.id = 'home-pictures-container';
+  picturesDiv.className = 'home-pictures-container';
 
   const picturesHead = document.createElement('h2');
-  picturesHead.id = 'pictures-heading';
+  picturesHead.className = 'pictures-heading';
   addTextAnimation(picturesHead, 'Beautiful and Flavorful Food');
 
   const picturesArray = [];
   for (let i = 1; i <= 4; i += 1) {
     const picture = document.createElement('img');
-    picture.id = `home-picture-${i}`;
-    picture.className = 'picture-spin';
+    picture.classList.add(`home-picture-${i}`, 'picture-spin');
     picturesArray.push(picture);
   }
 
