@@ -1,3 +1,4 @@
+import addTextAnimation from '../functions/text-anim';
 import '../../styles/menu.css';
 
 function menu() {
@@ -31,6 +32,8 @@ function menu() {
   });
 
   main.appendChild(heroDiv);
+
+  return main;
 }
 
 export default menu;

@@ -1,3 +1,4 @@
+import addTextAnimation from '../functions/text-anim';
 import cocktailImage from '../../assets/images/home-cocktails.jpg';
 import fishHome1 from '../../assets/images/home-fish-1.png';
 import pizzaHome from '../../assets/images/home-pizza.png';
@@ -5,21 +6,6 @@ import noodleHome from '../../assets/images/home-noodle.png';
 import fishHome2 from '../../assets/images/home-fish-2.png';
 // import homeBackground from '../../assets/images/home-bg.jpg';
 import '../../styles/home.css';
-
-function addTextAnimation(node, text) {
-  let delayCount = 0;
-
-  Array.from(text).forEach((letter) => {
-    const letterSpan = document.createElement('span');
-    letterSpan.textContent = letter;
-    letterSpan.style.transitionDelay = `${delayCount}s`;
-
-    node.appendChild(letterSpan);
-    delayCount += 0.04;
-  });
-
-  return node;
-}
 
 function home() {
   const main = document.createElement('main');
