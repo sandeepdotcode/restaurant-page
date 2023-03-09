@@ -1,3 +1,77 @@
-.hero-div--main {
+.hero-div--menu {
     height: 100vh;
+    background: url(../assets/images/menu-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.hero-title--menu {
+    margin-top: 12%;
+    margin-left: 45%;
+    display: inline-block;
+}
+
+.cards-container {
+    position: absolute;
+    top: 85vh;
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.floating-card {
+    position: relative;
+    width: 24.5vw;
+    height: 20vw;
+    text-align: center;
+    padding-top: 16vw;
+    filter: brightness(50%);
+    transition: all 0.55s;
+    transform-origin: 50% 50%;
+    animation: Updown linear infinite normal;
+}
+
+@keyframes Updown {
+    50% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
+.floating-card:hover {
+    filter: brightness(100%);
+}
+
+.menu-card-1 {
+    top: -2rem;
+    background: url(../assets/images/menu-card-1.jpg) no-repeat;
+    background-size: auto, cover;
+    animation-duration: 7s;
+}
+
+.menu-card-2 {
+    top: 2rem;
+    background: no-repeat url(../assets/images/menu-card-2.jpg);
+    background-size: cover;
+    animation-duration: 20s;
+}
+
+.menu-card-3 {
+    top: -4rem;
+    background: no-repeat url(../assets/images/menu-card-3.jpg);
+    background-size: cover;
+    animation-duration: 13s;
+}
+
+.menu-card-4 {
+    background: no-repeat url(../assets/images/menu-card-4.jpg);
+    background-size: cover;
+    animation-duration: 9s;
+}
+
+.menu-div {
+    height: 150vh;
 }

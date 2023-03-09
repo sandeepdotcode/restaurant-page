@@ -15,6 +15,9 @@ function menu() {
 
   heroDiv.appendChild(heroTitle);
 
+  const cardsContainer = document.createElement('div');
+  cardsContainer.className = 'cards-container';
+
   const menuCardsArray = [];
   for (let i = 1; i <= 4; i += 1) {
     const card = document.createElement('div');
@@ -22,16 +25,22 @@ function menu() {
     menuCardsArray.push(card);
   }
 
-  menuCardsArray[0].textContent = 'Starters';
-  menuCardsArray[1].textContent = 'Main Dishes';
-  menuCardsArray[2].textContent = 'Desserts';
-  menuCardsArray[3].textContent = 'Drinks';
+  menuCardsArray[0].textContent = 'STARTERS';
+  menuCardsArray[1].textContent = 'MAIN DISHES';
+  menuCardsArray[2].textContent = 'DESSERTS';
+  menuCardsArray[3].textContent = 'DRINKS';
 
   menuCardsArray.forEach((card) => {
-    heroDiv.appendChild(card);
+    cardsContainer.appendChild(card);
   });
+  heroDiv.appendChild(cardsContainer);
 
   main.appendChild(heroDiv);
+
+  const menuDiv = document.createElement('div');
+  menuDiv.className = 'menu-div';
+
+  main.appendChild(menuDiv);
 
   return main;
 }
