@@ -1,3 +1,4 @@
+import starters from './sub-menu';
 import addTextAnimation from '../functions/text-anim';
 import '../../styles/menu.css';
 
@@ -40,6 +41,7 @@ function menu() {
   const menuDiv = document.createElement('div');
   menuDiv.className = 'menu-div';
 
+  menuDiv.appendChild(starters());
   main.appendChild(menuDiv);
 
   return main;
