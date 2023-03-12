@@ -19,5 +19,5 @@ menuBtn.addEventListener('click', () => {
 });
 
 aboutBtn.addEventListener('click', () => {
-  pageLoad('menu');
+  pageLoad('about');
 });

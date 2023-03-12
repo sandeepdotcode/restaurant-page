@@ -1,0 +1,11 @@
+.hero-div--about {
+    width: 100%;
+    height: 90vh;
+    background: url(../assets/images/about-us-bg.jpg) no-repeat;
+}
+
+.hero-title--about {
+    margin-top: 18vh;
+    margin-left: 10vw;
+    display: inline-block;
+}
