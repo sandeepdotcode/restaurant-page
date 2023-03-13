@@ -59,21 +59,25 @@ h2 {
 }
 
 h3 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 /* Rotating Image Animation */
 
 .picture-spin {
-  transform-origin: 50% 50%;
+  /* transform-origin: 50% 50%; */
   animation: rotateImg;
   animation-duration: 90s;
   animation-timing-function: linear;
