@@ -13,7 +13,7 @@
 .manager-div {
     position: relative;
     height: 85vh;
-    background-color: #1A100E;
+    background-color: var(--manager-bg);
     padding: 25vmin 15vmin;
     overflow: hidden;
 }
@@ -26,11 +26,12 @@
     bottom: 0;
 }
 
-.manager-bio {
+.manager-bio, .chef-bio {
     line-height: 1.5rem;
     letter-spacing: 0.02rem;
     margin-top: 20px;
     width: 75vmin;
+    padding-left: 10px;
 }
 
 .misters-dish {
@@ -40,4 +41,27 @@
     bottom: -2vw;
     width: 25vw;
     height: auto;
+}
+
+.chef-div {
+    position: relative;
+    height: 70vh;
+    padding: 15vmin 15vmin 15vmin 35vw;
+}
+
+.chef-title, .chef-name {
+    color: var(--white-text);
+}
+
+.chef-bio {
+    color: var(--manager-bg);
+    width: 85vmin;
+}
+
+.chef-image {
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    height: 65vmin;
+    width: auto;
 }
