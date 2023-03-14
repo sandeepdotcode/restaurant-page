@@ -1,5 +1,5 @@
 header {
-    padding-left: 70%;
+    /* padding-left: 70%; */
     position: fixed;
     top: 0;
     left: 0;
@@ -7,12 +7,21 @@ header {
     transition: 0.55s;
     z-index: 20;
     background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    padding: 1rem;
+    height: 4.5rem;
+    width: auto;
 }
 
 
 
 nav {
     display: flex;
+    width: 30%;
 }
 
 .nav-item {

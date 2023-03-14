@@ -3,9 +3,9 @@
 }
 
 .hero-div {
-    height: 150vh;
+    height: 160vh;
     background: url(../assets/images/home-bg.jpg) no-repeat;
-    background-size: auto 1800px;
+    background-size: cover;
     padding-top: 10rem;
     padding-left: 30%;
 }

@@ -1,10 +1,12 @@
 import home from '../pages/home';
 import menu from '../pages/menu';
 import aboutUs from '../pages/about-us';
+import headerLogo from './header-logo';
 
 function initialLoad() {
   const content = document.querySelector('#content');
 
+  headerLogo();
   content.appendChild(home());
 }
 
