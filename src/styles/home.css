@@ -21,12 +21,25 @@
     left: 0;
     width: 80%;
     height: 85vh;
+    padding: 10vmin;
+}
+
+.mission-para-div {
+    margin-top: 1.5rem;
+    margin-left: 15%;
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .mission-text {
     color: var(--mission-color);
-    width: 35%;
-    font-size: 0.82rem;
+    width: 40%;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.02rem;
 }
 
 .mission-drinks--img {

@@ -37,9 +37,11 @@ function home() {
   const missionPara2 = document.createElement('p');
   const missionPara3 = document.createElement('p');
   const missionImage = document.createElement('img');
+  const missionParaDiv = document.createElement('div');
   missionPara1.className = 'mission-text';
   missionPara2.className = 'mission-text';
   missionPara3.className = 'mission-text';
+  missionParaDiv.className = 'mission-para-div';
   missionImage.className = 'mission-drinks--img';
   missionImage.src = cocktailImage;
   missionImage.alt = 'Image of Cocktails';
@@ -54,7 +56,8 @@ function home() {
   missionPara3.textContent = `Whether you are joining us for dinner, cocktails, a private party or any special occasion, Worldwide Kitchen opens its doors
    to you and promises to make the experience special and memorable. The team eagerly awaits to show you world-class hospitality`;
 
-  missionDiv.append(missionTitle, missionPara1, missionPara2, missionPara3, missionImage);
+  missionParaDiv.append(missionPara1, missionPara2, missionPara3);
+  missionDiv.append(missionTitle, missionParaDiv, missionImage);
   main.appendChild(missionDiv);
 
   const picturesDiv = document.createElement('div');
