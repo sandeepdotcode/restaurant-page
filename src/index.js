@@ -1,5 +1,6 @@
 import { initialLoad, pageLoad } from './modules/functions/page-load';
 import changeHeaderOnScroll from './modules/functions/header-scroll';
+import './styles/reset.css';
 import './styles/style.css';
 import './styles/header-footer.css';
 
