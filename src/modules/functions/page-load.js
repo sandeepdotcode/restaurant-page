@@ -7,7 +7,7 @@ function initialLoad() {
   const content = document.querySelector('#content');
 
   headerLogo();
-  content.appendChild(home());
+  content.appendChild(menu());
 }
 
 function pageLoad(moduleName) {
