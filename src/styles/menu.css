@@ -73,8 +73,12 @@
 }
 
 .menu-div {
-    height: 150vh;
+    min-height: 150vh;
     padding-top: 20vw;
+}
+
+.menu-head {
+    color: var(--white-text);
 }
 
 .sub-head--menu {
@@ -84,6 +88,42 @@
 .menu-block {
     text-align: center;
     padding-top: 0.8rem;
+    width: 40vw;
+    border-radius: 0.4rem;
+    margin-bottom: 4rem;
+}
+
+.menu-image {
+    margin: 50px 0;
+    height: 35vmin;
+    border-radius: 0.4rem;
+}
+
+.menu-text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.menu-item {
+    margin-left: 15%;
+    width: 70%;
+}
+
+.menu-item--main {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.menu-item--sub {
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 10px;
 }
 
 /* Starters Menu */
@@ -103,11 +143,9 @@
 }
 
 .menu-starter, .menu-salad {
-    width: 40vw;
     min-height: 80vh;
     /* background-color: var(--font-color); */
     background-color: rgb(46, 46, 46);
-    border-radius: 0.4rem;
 }
 
 .menu-starter {
