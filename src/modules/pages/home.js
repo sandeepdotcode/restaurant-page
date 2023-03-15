@@ -17,7 +17,7 @@ function home() {
 
   const heroHead = document.createElement('h1');
   heroHead.className = 'hero-text';
-  addTextAnimation(heroHead, 'Assorted International Cuisine');
+  addTextAnimation(heroHead, 'Exquisite International Cuisine');
 
   const heroSub = document.createElement('p');
   heroSub.className = 'hero-subtext';
@@ -38,10 +38,12 @@ function home() {
   const missionPara3 = document.createElement('p');
   const missionImage = document.createElement('img');
   const missionParaDiv = document.createElement('div');
+  const missionParaSubDiv = document.createElement('div');
   missionPara1.className = 'mission-text';
   missionPara2.className = 'mission-text';
   missionPara3.className = 'mission-text';
   missionParaDiv.className = 'mission-para-div';
+  missionParaSubDiv.className = 'mission-para-col2';
   missionImage.className = 'mission-drinks--img';
   missionImage.src = cocktailImage;
   missionImage.alt = 'Image of Cocktails';
@@ -56,7 +58,8 @@ function home() {
   missionPara3.textContent = `Whether you are joining us for dinner, cocktails, a private party or any special occasion, Worldwide Kitchen opens its doors
    to you and promises to make the experience special and memorable. The team eagerly awaits to show you world-class hospitality`;
 
-  missionParaDiv.append(missionPara1, missionPara2, missionPara3);
+  missionParaSubDiv.append(missionPara2, missionPara3);
+  missionParaDiv.append(missionPara1, missionParaSubDiv);
   missionDiv.append(missionTitle, missionParaDiv, missionImage);
   main.appendChild(missionDiv);
 

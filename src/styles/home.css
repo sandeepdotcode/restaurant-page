@@ -10,6 +10,10 @@
     padding-left: 10%;
 }
 
+.hero-text {
+    width: 70vw;
+}
+
 .hero-subtext {
     font-size: 1.3rem;
 }
@@ -27,19 +31,24 @@
 .mission-para-div {
     margin-top: 1.5rem;
     margin-left: 15%;
+    width: 80%;
     max-height: 50%;
     display: flex;
+    justify-content: space-around;
+}
+
+.mission-para-col2 {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .mission-text {
     color: var(--mission-color);
-    width: 40%;
-    font-size: 0.85rem;
-    line-height: 1.3rem;
+    font-size: 0.87rem;
+    line-height: 1.5rem;
     letter-spacing: 0.02rem;
+    width: 45vmin;
 }
 
 .mission-drinks--img {
@@ -59,7 +68,7 @@
 }
 
 .pictures-heading {
-    width: 60%;
+    width: 50%;
     position: relative;
     left: 13%;
 }
