@@ -1,24 +1,32 @@
 /* libre-caslon-display-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Libre Caslon Display';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/libre-caslon-display-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../assets/fonts/libre-caslon-display-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../assets/fonts/libre-caslon-display-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/libre-caslon-display-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/libre-caslon-display-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/libre-caslon-display-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/libre-caslon-display-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/libre-caslon-display-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/libre-caslon-display-v14-latin-regular.svg#LibreCaslonDisplay') format('svg'); /* Legacy iOS */
 }
 
 /* libre-caslon-text-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Libre Caslon Text';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/libre-caslon-text-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../assets/fonts/libre-caslon-text-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../assets/fonts/libre-caslon-text-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/libre-caslon-text-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/libre-caslon-text-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/libre-caslon-text-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/libre-caslon-text-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/libre-caslon-text-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/libre-caslon-text-v3-latin-regular.svg#LibreCaslonText') format('svg'); /* Legacy iOS */
 }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text&display=swap'); */
 
 :root {
     --font-color: #EBDFD4;
@@ -40,6 +48,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Libre Caslon Text', serif;
+  font-size: 16px;
 }
 
 body {
