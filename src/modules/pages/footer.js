@@ -1,3 +1,5 @@
+import logo from '../../assets/images/worldwide-logo-lowres.png';
+
 function loadFooter() {
   const footer = document.querySelector('footer');
   const footerWrapper = document.createElement('div');
@@ -20,6 +22,7 @@ function loadFooter() {
   const footerMiddleRow = document.createElement('div');
   footerMiddleRow.className = 'footer-2nd-row';
   const addressDiv = document.createElement('div');
+  addressDiv.className = 'footer-address';
   addressDiv.innerHTML = '<span>BUCKINGHAM PALACE</span><span class=\'addr-delimiter\'>|</span><span>MARLBOROUGH RD, LDN</span><span class=\'addr-delimiter\'>|</span><span>COPYRIGHT 2023</span>';
   const buttonDiv = document.createElement('div');
   buttonDiv.className = 'footer-btn-div';
@@ -40,12 +43,20 @@ function loadFooter() {
   const creatorInfo = document.createElement('div');
   creatorInfo.className = 'creator';
   const creatorLink = document.createElement('a');
+  creatorLink.className = 'creator-link';
   creatorLink.textContent = 'DEVELOPED BY SANDEEP K K ';
   const gitHub = document.createElement('i');
   gitHub.classList.add('fa-brands', 'fa-github');
   creatorLink.appendChild(gitHub);
+  creatorLink.href = 'https://github.com/sandeepdotcode/restaurant-page';
+  creatorLink.target = '_blank';
   creatorInfo.appendChild(creatorLink);
   footerBottom.append(timingText, creatorInfo);
+
+  const footLogo = document.createElement('img');
+  footLogo.className = 'footer-logo';
+  footLogo.src = logo;
+  footerTop.appendChild(footLogo);
 
   footerWrapper.append(footerTop, footerBottom);
   footer.appendChild(footerWrapper);

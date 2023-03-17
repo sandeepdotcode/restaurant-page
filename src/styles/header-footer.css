@@ -42,7 +42,99 @@ nav {
 }
 
 footer {
-    height: 50vh;
+    height: 60vh;
     background-color: var(--mission-bg);
     width: 100%;
+}
+
+.footer-wrapper {
+    padding: 15vh 10vh 5vh;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-top {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid var(--font-color);
+    position: relative;
+}
+
+.footer-top:after {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    background: var(--mission-bg);
+    width: 15rem;
+    height: 1px;
+}
+
+.footer-logo {
+    width: 10rem;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-2nd-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-address {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.footer-btn-div {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-btn {
+    width: 15rem;
+    height: 3rem;
+    background-color: var(--mission-bg);
+    border: solid 1px var(--font-color);
+    color: var(--font-color);
+    transition: all 0.55s;
+}
+
+.footer-btn:hover {
+    background-color: var(--font-color);
+    color: var(--mission-bg);
+    cursor: pointer;
+}
+
+.footer-bottom {
+    padding-top: 2rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-hours-txt {
+    font-size: 0.75rem;
+}
+
+.creator-link {
+    color: var(--font-color);
+    text-decoration: none;
 }
