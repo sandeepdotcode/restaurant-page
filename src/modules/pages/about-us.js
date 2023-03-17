@@ -5,7 +5,7 @@ import mrSushi from '../../assets/images/mr-sushi.png';
 import chefImage from '../../assets/images/pitbull-chef.png';
 
 function aboutUs() {
-  const main = document.createElement('div');
+  const main = document.createElement('main');
   main.id = 'main';
   main.className = 'main-about-us';
 

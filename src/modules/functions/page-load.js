@@ -20,6 +20,8 @@ function pageLoad(moduleName) {
   if (moduleName === 'home') content.appendChild(home());
   else if (moduleName === 'menu') content.appendChild(menu());
   else if (moduleName === 'about') content.appendChild(aboutUs());
+  const newMain = document.querySelector('main');
+  newMain.scrollIntoView();
 }
 
 export { initialLoad, pageLoad };
