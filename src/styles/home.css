@@ -10,6 +10,12 @@
     padding-left: 10%;
 }
 
+.hero-text-wrapper {
+    animation-name: fadeInUp;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+}
+
 .hero-text {
     width: 70vw;
 }
@@ -17,6 +23,20 @@
 .hero-subtext {
     font-size: 1.3rem;
 }
+
+.hero-text-wrapper span,
+.pictures-heading span {
+  transform: rotateY(90deg);
+  display: inline-block;
+  white-space: normal;
+  transition: all 1.3s;
+}
+
+.hero-text-wrapper .anim-active span,
+.pictures-heading.anim-active span{
+  transform: rotateY(0);
+}
+
 
 .our-mission {
     background-color: var(--mission-bg);
