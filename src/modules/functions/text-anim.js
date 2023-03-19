@@ -13,4 +13,19 @@ function addTextAnimation(node, text) {
   return node;
 }
 
-export default addTextAnimation;
+function activateAnimation() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('anim-active');
+      }
+    });
+  });
+
+  const nodesToObserve = document.querySelectorAll('.activate-anim');
+  nodesToObserve.forEach((nodeTO) => {
+    observer.observe(nodeTO);
+  });
+}
+
+export { addTextAnimation, activateAnimation };

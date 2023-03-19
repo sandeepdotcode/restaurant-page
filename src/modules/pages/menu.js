@@ -1,5 +1,5 @@
 import starters from './sub-menu';
-import addTextAnimation from '../functions/text-anim';
+import { addTextAnimation } from '../functions/text-anim';
 import '../../styles/menu.css';
 
 function menu() {

@@ -1,5 +1,5 @@
 import '../../styles/about-us.css';
-import addTextAnimation from '../functions/text-anim';
+import { addTextAnimation } from '../functions/text-anim';
 import mrWorldwideImg from '../../assets/images/mrworldwide.png';
 import mrSushi from '../../assets/images/mr-sushi.png';
 import chefImage from '../../assets/images/pitbull-chef.png';

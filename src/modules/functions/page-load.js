@@ -3,6 +3,7 @@ import home from '../pages/home';
 import menu from '../pages/menu';
 import aboutUs from '../pages/about-us';
 import headerLogo from './header-logo';
+import { activateAnimation } from './text-anim';
 
 function initialLoad() {
   const content = document.querySelector('#content');
@@ -10,6 +11,7 @@ function initialLoad() {
   loadFooter();
   headerLogo();
   content.appendChild(home());
+  activateAnimation();
 }
 
 function pageLoad(moduleName) {
@@ -22,6 +24,7 @@ function pageLoad(moduleName) {
   else if (moduleName === 'about') content.appendChild(aboutUs());
   const newMain = document.querySelector('main');
   newMain.scrollIntoView();
+  activateAnimation();
 }
 
 export { initialLoad, pageLoad };

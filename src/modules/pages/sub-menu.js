@@ -1,4 +1,4 @@
-import addTextAnimation from '../functions/text-anim';
+import { addTextAnimation } from '../functions/text-anim';
 import starterTartare from '../../assets/images/starter.jpg';
 
 function createMenuItem(itemName, price, subText) {

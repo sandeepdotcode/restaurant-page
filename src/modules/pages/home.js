@@ -1,4 +1,4 @@
-import addTextAnimation from '../functions/text-anim';
+import { addTextAnimation } from '../functions/text-anim';
 import cocktailImage from '../../assets/images/home-cocktails.jpg';
 import fishHome1 from '../../assets/images/home-fish-1.png';
 import pizzaHome from '../../assets/images/home-pizza.png';
@@ -15,16 +15,19 @@ function home() {
   const heroDiv = document.createElement('div');
   heroDiv.className = 'hero-div';
 
+  const heroTextWrapper = document.createElement('div');
+  heroTextWrapper.className = 'hero-text-wrapper';
+
   const heroHead = document.createElement('h1');
-  heroHead.className = 'hero-text';
+  heroHead.classList.add('hero-text', 'activate-anim');
   addTextAnimation(heroHead, 'Exquisite International Cuisine');
 
   const heroSub = document.createElement('p');
-  heroSub.className = 'hero-subtext';
+  heroSub.classList.add('hero-subtext', 'activate-anim');
   addTextAnimation(heroSub, 'CURATED BY WORLDWIDE EXPERT CHEFS');
 
-  heroDiv.appendChild(heroSub);
-  heroDiv.appendChild(heroHead);
+  heroTextWrapper.append(heroSub, heroHead);
+  heroDiv.appendChild(heroTextWrapper);
   main.appendChild(heroDiv);
 
   const missionDiv = document.createElement('div');
@@ -67,7 +70,7 @@ function home() {
   picturesDiv.className = 'home-pictures-container';
 
   const picturesHead = document.createElement('h2');
-  picturesHead.className = 'pictures-heading';
+  picturesHead.classList.add('pictures-heading', 'activate-anim');
   addTextAnimation(picturesHead, 'Beautiful and Flavorful Food');
 
   const picturesArray = [];
