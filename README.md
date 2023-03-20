@@ -34,7 +34,7 @@ The design of the page is inspired by the website of [Adachi Restaurant](www.ada
 ## To Be added
 - [ ] Switchable menu tabs
 - [ ] Populate different menus
-- [ ] More Animations
-  - [ ] Text Animations
-  - [ ] Images
+- [x] More Animations
+  - [x] Text Animations
+  - [x] Images
 - [ ] Make the site a bit more responsive
