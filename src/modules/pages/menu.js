@@ -8,13 +8,17 @@ function menu() {
   main.className = 'main-menu';
 
   const heroDiv = document.createElement('div');
-  heroDiv.className = 'hero-div--menu';
+  heroDiv.classList.add('hero-div--menu', 'activate-anim');
+
+  const heroTitleWrapper = document.createElement('div');
+  heroTitleWrapper.className = 'menu-title-wrapper';
 
   const heroTitle = document.createElement('h1');
-  heroTitle.className = 'hero-title--menu';
+  heroTitle.classList.add('hero-title--menu', 'activate-anim');
   addTextAnimation(heroTitle, 'View Our Menu');
 
-  heroDiv.appendChild(heroTitle);
+  heroTitleWrapper.appendChild(heroTitle);
+  heroDiv.appendChild(heroTitleWrapper);
 
   const cardsContainer = document.createElement('div');
   cardsContainer.className = 'cards-container';

@@ -2,12 +2,34 @@
     height: 85vh;
     background: url(../assets/images/menu-bg.jpg) no-repeat;
     background-size: cover;
+    opacity: 0.5;
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+.hero-div--menu.anim-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.menu-title-wrapper {
+    animation: fadeInUp 2.5s both;
 }
 
 .hero-title--menu {
     margin-top: 12%;
     margin-left: 45%;
     display: inline-block;
+}
+
+.hero-title--menu span {
+    display: inline-block;
+    transform: rotateY(90deg);
+    transition: 1.3s;
+}
+
+.hero-title--menu.anim-active span {
+    transform: rotateY(0);
 }
 
 .cards-container {
@@ -140,6 +162,10 @@
 .starter-head {
     grid-area: start-head;
     text-align: center;
+}
+
+.starter-head.anim-active {
+    animation: fadeInUp 1.2s both;
 }
 
 .menu-starter, .menu-salad {

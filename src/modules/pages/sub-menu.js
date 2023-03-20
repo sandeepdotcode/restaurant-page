@@ -1,4 +1,3 @@
-import { addTextAnimation } from '../functions/text-anim';
 import starterTartare from '../../assets/images/starter.jpg';
 
 function createMenuItem(itemName, price, subText) {
@@ -24,8 +23,8 @@ function starters() {
   starterContainer.className = 'starter-container';
 
   const starterHead = document.createElement('h3');
-  starterHead.classList.add('starter-head', 'menu-head');
-  addTextAnimation(starterHead, 'Starters & Salads');
+  starterHead.classList.add('starter-head', 'menu-head', 'activate-anim');
+  starterHead.textContent = 'Starters & Salads';
 
   const starterMenu = document.createElement('div');
   starterMenu.classList.add('menu-starter', 'menu-block');
