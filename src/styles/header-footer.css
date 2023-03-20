@@ -51,6 +51,14 @@ footer {
     padding: 15vh 10vh 5vh;
     height: 100%;
     width: 100%;
+    transition: 1s;
+    opacity: 0;
+    transform: scale(1.5);
+}
+
+.footer-wrapper.anim-active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .footer-top {

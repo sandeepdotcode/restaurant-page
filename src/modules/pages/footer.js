@@ -3,7 +3,7 @@ import logo from '../../assets/images/worldwide-logo-lowres.png';
 function loadFooter() {
   const footer = document.querySelector('footer');
   const footerWrapper = document.createElement('div');
-  footerWrapper.className = 'footer-wrapper';
+  footerWrapper.classList.add('footer-wrapper', 'activate-anim');
   const footerTop = document.createElement('div');
   const footerBottom = document.createElement('div');
   footerTop.className = 'footer-top';

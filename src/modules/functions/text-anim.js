@@ -2,11 +2,20 @@ function addTextAnimation(node, text) {
   let delayCount = 0;
 
   Array.from(text).forEach((letter) => {
-    const letterSpan = document.createElement('span');
-    letterSpan.textContent = letter;
-    letterSpan.style.transitionDelay = `${delayCount}s`;
+    let letterElement;
+    if (letter === '%') {
+      letterElement = document.createElement('br');
+    } else if (letter === ' ') {
+      letterElement = document.createElement('span');
+      letterElement.innerHTML = '&nbsp;';
+      letterElement.style.transitionDelay = `${delayCount}s`;
+    } else {
+      letterElement = document.createElement('span');
+      letterElement.style.transitionDelay = `${delayCount}s`;
+      letterElement.textContent = letter;
+    }
 
-    node.appendChild(letterSpan);
+    node.appendChild(letterElement);
     delayCount += 0.04;
   });
 

@@ -20,7 +20,7 @@ function home() {
 
   const heroHead = document.createElement('h1');
   heroHead.classList.add('hero-text', 'activate-anim');
-  addTextAnimation(heroHead, 'Exquisite International Cuisine');
+  addTextAnimation(heroHead, 'Exquisite International%Cuisine');
 
   const heroSub = document.createElement('p');
   heroSub.classList.add('hero-subtext', 'activate-anim');
@@ -71,7 +71,7 @@ function home() {
 
   const picturesHead = document.createElement('h2');
   picturesHead.classList.add('pictures-heading', 'activate-anim');
-  addTextAnimation(picturesHead, 'Beautiful and Flavorful Food');
+  addTextAnimation(picturesHead, 'Beautiful and%Flavorful Food');
 
   const picturesArray = [];
   for (let i = 1; i <= 4; i += 1) {
