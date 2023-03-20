@@ -10,13 +10,17 @@ function aboutUs() {
   main.className = 'main-about-us';
 
   const heroDiv = document.createElement('div');
-  heroDiv.className = 'hero-div--about';
+  heroDiv.classList.add('hero-div--about', 'activate-anim');
+
+  const aboutTitleWrapper = document.createElement('div');
+  aboutTitleWrapper.className = 'about-title-wrapper';
 
   const heroHead = document.createElement('h1');
-  heroHead.className = 'hero-title--about';
+  heroHead.classList.add('hero-title--about', 'activate-anim');
   addTextAnimation(heroHead, 'Meet Our Team');
 
-  heroDiv.appendChild(heroHead);
+  aboutTitleWrapper.appendChild(heroHead);
+  heroDiv.appendChild(aboutTitleWrapper);
   main.appendChild(heroDiv);
 
   const managerDiv = document.createElement('div');
@@ -24,13 +28,13 @@ function aboutUs() {
 
   const managerTitle = document.createElement('h5');
   managerTitle.textContent = 'EXECUTIVE CHEF AND RESTAURANT MANAGER';
-  managerTitle.className = 'manager-title';
+  managerTitle.classList.add('manager-title', 'activate-anim');
   const managerName = document.createElement('h2');
   managerName.textContent = 'Mr. Worldwide';
-  managerName.className = 'manager-name';
+  managerName.classList.add('manager-name', 'activate-anim');
 
   const managerBio = document.createElement('p');
-  managerBio.className = 'manager-bio';
+  managerBio.classList.add('manager-bio', 'activate-anim');
   managerBio.textContent = `The Man, The Myth, The LEGEND. The founder, manager, and executive chef of 
                             Worldwide Kitchen. Prior to starting the restaurant he had a successful career
                             as one of the world's most popular pop singers. It was always his dream to bring
@@ -51,14 +55,14 @@ function aboutUs() {
   const chefDiv = document.createElement('div');
   chefDiv.className = 'chef-div';
   const chefTitle = document.createElement('h5');
-  chefTitle.className = 'chef-title';
+  chefTitle.classList.add('chef-title', 'activate-anim');
   chefTitle.textContent = 'SOUS CHEF';
   const chefName = document.createElement('h2');
-  chefName.className = 'chef-name';
+  chefName.classList.add('chef-name', 'activate-anim');
   chefName.textContent = 'Pitbull Woofmeister';
 
   const chefBio = document.createElement('p');
-  chefBio.className = 'chef-bio';
+  chefBio.classList.add('chef-bio', 'activate-anim');
   chefBio.textContent = `Doggo ipsum puggorino woofer you are doin me a concern stop it fren shibe, long woofer length boy very taste wow. Wrinkler ruff you are doing me the shock yapper big ol, vvv ur givin me a spook super chub. Clouds super chub wrinkler heckin smol porgo, big ol long woofer much ruin diet blep. Fat boi he made many woofs corgo woofer pupper, boof wow very biscit doing me a frighten. Pats wow such tempt shibe doggo vvv waggy wags, aqua doggo heckin maximum borkdrive.
   `;
   chefDiv.append(chefTitle, chefName, chefBio);

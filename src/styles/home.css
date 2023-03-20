@@ -74,7 +74,7 @@
 }
 
 .mission-para-div.anim-active {
-    animation: fadeInUp 1.2s 400ms both;
+    animation: fadeInUp 1.3s 400ms both;
 }
 
 .mission-para-col2 {
@@ -84,7 +84,7 @@
 }
 
 .mission-para-col2 {
-    animation: fadeInUp 1.2s 600ms both;
+    animation: fadeInUp 1.3s 600ms both;
 }
 
 .mission-text {
