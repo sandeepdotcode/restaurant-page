@@ -8,6 +8,14 @@
     background-size: cover;
     padding-top: 10rem;
     padding-left: 10%;
+    opacity: 0.5;
+    transform: scale(1.2);
+    transition: 1.2s;
+}
+
+.hero-div.anim-active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .hero-text-wrapper {
@@ -41,11 +49,19 @@
 .our-mission {
     background-color: var(--mission-bg);
     position: absolute;
-    top: 100vh;
+    top: 102vh;
     left: 0;
     width: 80%;
     height: 85vh;
     padding: 10vmin;
+}
+
+.our-mission.anim-active {
+    animation: fadeInLeft 1.2s both;
+}
+
+.mission-title.anim-active {
+    animation: fadeInUp 1.2s 200ms both;
 }
 
 .mission-para-div {
@@ -57,10 +73,18 @@
     justify-content: space-around;
 }
 
+.mission-para-div.anim-active {
+    animation: fadeInUp 1.2s 400ms both;
+}
+
 .mission-para-col2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.mission-para-col2 {
+    animation: fadeInUp 1.2s 600ms both;
 }
 
 .mission-text {
@@ -76,6 +100,12 @@
     top: 60vh;
     right: 0;
     width: 80%;
+    transform: scale(0.3);
+    transition: all 0.9s;
+}
+
+.mission-drinks--img.anim-active {
+    transform: scale(1);
 }
 
 .home-pictures-container {

@@ -13,7 +13,7 @@ function home() {
   main.className = 'main-home';
 
   const heroDiv = document.createElement('div');
-  heroDiv.className = 'hero-div';
+  heroDiv.classList.add('hero-div', 'activate-anim');
 
   const heroTextWrapper = document.createElement('div');
   heroTextWrapper.className = 'hero-text-wrapper';
@@ -31,9 +31,9 @@ function home() {
   main.appendChild(heroDiv);
 
   const missionDiv = document.createElement('div');
-  missionDiv.className = 'our-mission';
+  missionDiv.classList.add('our-mission', 'activate-anim');
   const missionTitle = document.createElement('h3');
-  missionTitle.className = 'mission-title';
+  missionTitle.classList.add('mission-title', 'activate-anim');
   addTextAnimation(missionTitle, 'Our Mission');
 
   const missionPara1 = document.createElement('p');
@@ -45,9 +45,9 @@ function home() {
   missionPara1.className = 'mission-text';
   missionPara2.className = 'mission-text';
   missionPara3.className = 'mission-text';
-  missionParaDiv.className = 'mission-para-div';
-  missionParaSubDiv.className = 'mission-para-col2';
-  missionImage.className = 'mission-drinks--img';
+  missionParaDiv.classList.add('mission-para-div', 'activate-anim');
+  missionParaSubDiv.classList.add('mission-para-col2', 'activate-anim');
+  missionImage.classList.add('mission-drinks--img', 'activate-anim');
   missionImage.src = cocktailImage;
   missionImage.alt = 'Image of Cocktails';
 
